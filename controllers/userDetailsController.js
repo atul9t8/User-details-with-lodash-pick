@@ -2,19 +2,14 @@ const User = require("../models/userDetails");
 const express = require("express");
 const _ = require('lodash')
 
+const greet = async(req, res)=>{
+    res.send("welcome")
+}
 
 const userInfo = async (req, res)=>{
     const user = new User(_.pick(req.body, ['forWhom', 'age', 'gender','raceOrEthnicity', 'householdIncome', 'usOrNot', 'countryOrState', 'postalCode', 'populationType', 'caringType', 'LGBTQSexualOrientation','traumaExperience', 'previousTreatment', 'mainMentalHealthProblems', 'healthInsurance', 'generalHealthCondition']))
-    // try{
-        // const user = new User({
-        //     forWhom : req.body.forWhom,
-        // })
-        await user.save()
-        res.send("user Saved")
-    // }
-    // catch(err){
-        // res.send(err)
-    // }
+    await user.save()
+    res.send("user Saved")
 }
 
-module.exports = { userInfo }
+module.exports = { userInfo, greet }
