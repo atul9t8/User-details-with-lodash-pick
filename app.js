@@ -10,7 +10,7 @@ mongoose.connect(process.env.DB)
 
 app.use(
     cors({
-        origin: "http://localhost:3001",
+        origin: "http://localhost:3000",
         credentials: true
     })
 )
@@ -20,4 +20,4 @@ app.use('/user', userRoute)
 
 port = process.env.PORT || 8088
 
-app.listen(port, ()=> console.log("Listening")) 
+app.listen(port, () => console.log("Listening")) 
