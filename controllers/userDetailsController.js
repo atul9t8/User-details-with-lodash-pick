@@ -3,7 +3,7 @@ const express = require("express");
 const _ = require('lodash')
 
 const greet = async(req, res)=>{
-    res.send("welcome")
+    res.send("welcome Man")
 }
 
 const userInfo = async (req, res)=>{
