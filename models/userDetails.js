@@ -35,7 +35,7 @@ const userSchema = new Schema ({
         required:false
     },
     populationType:{
-        type: [String],
+        type: Array,
         required:false
     },
     caringType:{
@@ -47,7 +47,7 @@ const userSchema = new Schema ({
         required:false
     },
     traumaExperience:{
-        type: [],
+        type: Array,
         required:false
     },
     previousTreatment:{
@@ -55,7 +55,7 @@ const userSchema = new Schema ({
         required:false
     },
     mainMentalHealthProblems:{
-        type: [String],
+        type: Array,
         required: false
     },
     healthInsurance:{
@@ -63,7 +63,7 @@ const userSchema = new Schema ({
         require: false
     },
     generalHealthCondition:{
-        type: [String],
+        type: Array,
         require: false 
     },
 })
