@@ -11,7 +11,7 @@ const userSchema = new Schema ({
         required: false
     },
     gender:{
-        type: String,
+        type: Array,
         required: false
     },
     raceOrEthnicity:{
