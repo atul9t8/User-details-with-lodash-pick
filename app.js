@@ -11,7 +11,6 @@ mongoose.connect(process.env.DB)
 app.use(
     cors({
         origin: "*",
-        credentials: true
     })
 )
 
