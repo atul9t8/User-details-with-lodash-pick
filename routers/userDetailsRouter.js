@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { userInfo, greet } = require("../controllers/userDetailsController")
+const { userInfo } = require("../controllers/userDetailsController")
 
 router.post('/userInfo', userInfo)
  
